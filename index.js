@@ -1,3 +1,4 @@
+// Code your solution in this file!
 const feetInBlock = 264
 const hq = 42
 
@@ -23,34 +24,39 @@ let numberOfBlocks
  }
  return numberOfBlocks * feetInBlock
 }
+
 function distanceTravelledInFeet(block1, block2) {
-  // 43     48 
-  // 1360
-  // 1. Want to get the distance between blocks//
-  const numberOfBlocks = math.abs(block1 - block2)
-  // 2. Convert that to feet 
-  return numberOfBlocks * feetInBlock
+ // 43  48 -> 5*264
+ // 1360
+ // 1. we want to get distance between blocks
+ // 2. get the distance in feet
+ const numberOfBlocks = Math.abs(block1 - block2)
+ return numberOfBlocks * feetInBlock
 }
+
 function calculatesFarePrice(startingBlock, destinationBlock) {
-  // how far are they going>
-  // 42 --> 32 
-  const numberOfBlocks = math.abs(startingBlock - destinationBlock)
-  const numberofFeet = numberOfBlocks * feetInBlock
-  // First four hundred feet are calculatesFarePrice
-  if (numberOfFeet <= 400) {
-    return 0 
-  }
-  // If the distance is between 400 and 2000 ft, the price is $0.02 per footm and the first 400 are still free 
-  // if more than 400 and less than or equal to 2000 
-  else if (numberOfFeet > 400 && numberOfFeet <= 2000) {
-    // first 400 free
-    // 600 ft -> 200 
-   return (numberOfFeet - 400) * 0.02
-  }
-  // 25 dollars for distance over 2000
-  else if (numberOfFeet > 2000 && numberOfFeet <= 2500) {
-    return 25 
-  } else { 
-    return 'cannot travel that far'
-  }
+ // how far are they going?
+   const numberOfBlocks = Math.abs(startingBlock - destinationBlock)
+   const numberOfFeet = numberOfBlocks * feetInBlock
+   // first 400 feet are free
+   if (numberOfFeet <= 400) {
+   return 0
+   }
+   //if distance is between 400 and 2000ft, the price is $.02 per foot, and the first 400 are still free
+   else if (numberOfFeet > 400 && numberOfFeet <= 2000) {
+  //first 400 are free
+  return (numberOfFeet - 400) * 0.02
+   }
+   //25 dollars for distance over 2000
+   else if (numberOfFeet > 2000 && numberOfFeet <= 2500) {
+     return 25
+   }
+   //cannot travel over 2500
+   else {
+     return 'cannot travel that far'
+   }
 }
+
+Message Input
+
+Message @marypalumbo
