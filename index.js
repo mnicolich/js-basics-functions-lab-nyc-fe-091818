@@ -45,6 +45,6 @@ function calculatesFarePrice(startingBlock, destinationBlock) {
   else if (numberOfFeet > 400 && numberOfFeet <= 2000) {
     // first 400 free
     // 600 ft -> 200 
-    (numberOfFeet - 400) * 0.02
+   return (numberOfFeet - 400) * 0.02
   }
 }
