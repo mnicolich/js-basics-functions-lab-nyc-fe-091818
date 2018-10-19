@@ -23,7 +23,7 @@ let numberOfBlocks
  }
  return numberOfBlocks * feetInBlock
 }
-function distanceTraveledInFeet(block1, block2){
+function distanceTraveledInFeet(block1, block2) {
   // 43     48 
   // 1360
   // 1. Want to get the distance between blocks//
@@ -31,3 +31,4 @@ function distanceTraveledInFeet(block1, block2){
   // 2. Convert that to feet 
   return numberOfBlocks * feetInBlock
 }
+function calculatesFarePrice(start, destination) {
