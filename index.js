@@ -31,4 +31,17 @@ function distanceTravelledInFeet(block1, block2) {
   // 2. Convert that to feet 
   return numberOfBlocks * feetInBlock
 }
-function calculatesFarePrice(start, destination) {
+function calculatesFarePrice(startingBlock, destinationBlock) {
+  // how far are they going>
+  // 42 --> 32 
+  const numberOfBlocks = math.abs(startingBlock - destinationBlock)
+  const numberofFeet = numberOfBlocks * feetInBlock
+  // First four hundred feet are calculatesFarePrice
+  if (numberOfFeet <= 400) {
+    return 0 
+  }
+  // If the distance is between 400 and 2000 ft, the price is $0.02 per footm and the first 400 are still free 
+  // if more than 400 and less than or equal to 2000 
+  else if (numberOfFeet > 400 & numberOfFeet <= 2000) {
+  }
+}
