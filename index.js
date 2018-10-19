@@ -56,7 +56,3 @@ function calculatesFarePrice(startingBlock, destinationBlock) {
      return 'cannot travel that far'
    }
 }
-
-Message Input
-
-Message @marypalumbo
