@@ -23,7 +23,7 @@ let numberOfBlocks
  }
  return numberOfBlocks * feetInBlock
 }
-function distanceTraveledInFeet(block1, block2) {
+function distanceTravelledInFeet(block1, block2) {
   // 43     48 
   // 1360
   // 1. Want to get the distance between blocks//
